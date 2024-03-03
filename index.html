@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="webicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Basim To-Do App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12 myform">
+          <input type="text" id="task-name" class="form-control" placeholder="Enter task description..">
+          <button class="btn btn-success" id="submit" onclick="addTask()">ADD</button>
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12 editform" id="edit-form">
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12 list-section">
+          <h2 class="list-title">My Tasks</h2>
+          <ul class="tasks" id="list-container">
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+body {
+  background: linear-gradient(to top left, #d53e2f, #ffff00);
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container{
+  padding: 50px;
+}
+
+
+
+.editform {
+  position: absolute;
+  padding: 50px;
+  top: 50%;
+  width: fit-content;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 0px 6px 20px 2px gray;
+  border-radius: 25px;
+  background: linear-gradient(to top left, #EC7063, #FFC300);
+  display: none;
+}
+
+.editform>*{
+  height: 40px;
+  display: inline-flex;
+}
+
+.closebutton {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: #ddd;
+  font-weight: bold;
+  height: fit-content;
+  width: fit-content;
+}
+
+.myform{
+  display: inline-flex;
+  justify-content: center;
+}
+
+.myform>*{
+  height: 40px;
+}
+
+.form-control{
+  width: 500px;
+  margin: 0 10px;
+}
+
+.list-section{
+  border-top: 1px solid gainsboro;
+  margin: 20px 0;
+}
+
+.list-title {
+  text-align: center;
+  color: white;
+  margin: 30px 0;
+}
+
+.tasks {
+  margin: 0;
+  padding: 20px;
+  list-style-type: none;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 25px;
+}
+
+
+.list-item{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.incomplete {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+  background: linear-gradient(to right, #EC7063, #FFC300);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.completed{
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: grey;
+  font-weight: 400;
+  font-size: 20px;
+  color: grey;
+  margin: 0;
+  text-decoration: line-through;
+  font-style: italic;
+}
